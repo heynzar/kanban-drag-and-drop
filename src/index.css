@@ -17,9 +17,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+.poem {
+  scrollbar-color: #363636 #242424;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  max-width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #242424;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #363636;
 }

@@ -1,11 +1,22 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Flame, Plus, Trash } from "lucide-react";
+import "./index.css";
 
 export const App = () => {
   return (
-    <div className="h-screen w-full  bg-neutral-900  text-neutral-50 ">
-      <Board />
+    <div className="min-h-screen w-full  bg-neutral-900  text-neutral-50 ">
+      <div className="hidden lg:block">
+        <Board />
+      </div>
+
+      <div className="flex h-screen justify-center text-center px-5 items-center lg:hidden">
+        <h1>
+          For an optimal experience, please access this app on a larger screen,
+          <br />
+          (+ Mouse).
+        </h1>
+      </div>
     </div>
   );
 };
@@ -14,7 +25,7 @@ const Board = () => {
   const [cards, setCards] = useState(DEFAULT_CARDS);
 
   return (
-    <div className="flex h-full w-full gap-3 overflow-hidden p-12">
+    <div className="poem flex h-full w-full gap-3 overflow-x-scroll p-12">
       <Column
         title="Backlog"
         column="backlog"
