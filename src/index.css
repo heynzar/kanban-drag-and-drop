@@ -18,7 +18,7 @@
 }
 
 .poem {
-  scrollbar-color: #363636 #242424;
+  scrollbar-color: #363636 transparent;
   scrollbar-width: thin;
 }
 
@@ -28,7 +28,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #242424;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

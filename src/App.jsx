@@ -312,29 +312,49 @@ const AddCard = ({ column, setCards }) => {
 
 const DEFAULT_CARDS = [
   // BACKLOG
-  { title: "Look into render bug in dashboard", id: "1", column: "backlog" },
-  { title: "SOX compliance checklist", id: "2", column: "backlog" },
-  { title: "[SPIKE] Migrate to Azure", id: "3", column: "backlog" },
-  { title: "Document Notifications service", id: "4", column: "backlog" },
+  {
+    title: "Fix alignment issue on the landing page",
+    id: "1",
+    column: "backlog",
+  },
+  {
+    title: "Plan accessibility improvements for form elements",
+    id: "2",
+    column: "backlog",
+  },
+  {
+    title: "[SPIKE] Explore React Server Components",
+    id: "3",
+    column: "backlog",
+  },
+  {
+    title: "Document theming guidelines for design system",
+    id: "4",
+    column: "backlog",
+  },
   // TODO
   {
-    title: "Research DB options for new microservice",
+    title: "Research performance optimization techniques for Next.js",
     id: "5",
     column: "todo",
   },
-  { title: "Postmortem for outage", id: "6", column: "todo" },
-  { title: "Sync with product on Q3 roadmap", id: "7", column: "todo" },
+  { title: "Prepare post-launch QA checklist", id: "6", column: "todo" },
+  {
+    title: "Sync with design team on homepage revamp",
+    id: "7",
+    column: "todo",
+  },
 
   // DOING
   {
-    title: "Refactor context providers to use Zustand",
+    title: "Refactor Navbar component to reduce bundle size",
     id: "8",
     column: "doing",
   },
-  { title: "Add logging to daily CRON", id: "9", column: "doing" },
+  { title: "Implement lazy loading for images", id: "9", column: "doing" },
   // DONE
   {
-    title: "Set up DD dashboards for Lambda listener",
+    title: "Add dark mode toggle and persist user preference",
     id: "10",
     column: "done",
   },
